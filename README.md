@@ -16,4 +16,4 @@ also click on Start Ngrok Server, you will find forwarding address like this
 ```
 Forwarding                    tcp://ab.bcd.kj.ngrok.io:12349 -> localhost:25565   
 ```
-**Copy the part after tcp:// till the arrow** and share it to your friends. That's it, enjoy
+**Copy the part after tcp:// till the arrow** and share it to your friends. i.e. ```ab.bcd.kj.ngrok.io:12349``` That's it, enjoy
