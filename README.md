@@ -13,6 +13,7 @@ python server_launcher.py
 ## Step 3: Click on start server
 A gui will be opened in which you will find "Start Minecraft server" button, click on it
 also click on Start Ngrok Server, you will find forwarding address like this
+```
 Forwarding                    tcp://ab.bcd.kj.ngrok.io:12349 -> localhost:25565   
-
+```
 **Copy the part after tcp:// till the arrow** and share it to your friends. That's it, enjoy
