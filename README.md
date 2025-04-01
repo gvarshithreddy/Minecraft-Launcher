@@ -17,3 +17,12 @@ also click on Start Ngrok Server, you will find forwarding address like this
 Forwarding                    tcp://ab.bcd.kj.ngrok.io:12349 -> localhost:25565   
 ```
 **Copy the part after tcp:// till the arrow** and share it to your friends. i.e. ```ab.bcd.kj.ngrok.io:12349``` That's it, enjoy
+
+## Note: If you want Cracked Server
+If you want cracker server:
+1. First start the server and wait for it to show Done
+2. Go to Server Properties tab in GUI
+3. Click on refresh
+4. Use mouse button to scroll the scrollbar down and find online mode and uncheck it and click on "Save Properties"
+5. Go back to Console tab
+6. Click on Start Minecraft server and let it stop then start the server again, you are done. 

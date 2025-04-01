@@ -83,9 +83,10 @@ def send_command():
     command_entry.delete(0, tk.END)
 
 def start_ngrok():
+    selected_region = ngrok_region_var.get()
     output_text.insert(tk.END, "Starting NGROK Tunnel...\n")
     def run_ngrok():
-        command = "ngrok tcp 25565"  # Replace with your desired command
+        command = f"ngrok tcp 25565 --region {selected_region}"
         subprocess.Popen(["start", "cmd", "/K", f"{command} & exit"], shell=True)
     threading.Thread(target=run_ngrok, daemon=True).start()
 
@@ -185,6 +186,12 @@ start_stop_button.pack(pady=5)
 
 start_ngrok_button = tk.Button(console_tab, text="Start NGROK", command=start_ngrok)
 start_ngrok_button.pack(pady=5)
+
+tk.Label(console_tab, text="Region:").pack(pady=5)  # Added label for regio
+ngrok_region_var = tk.StringVar(value="in")
+ngrok_regions = ["us", "eu", "ap", "au", "sa", "jp", "in"]
+region_dropdown = ttk.Combobox(console_tab, textvariable=ngrok_region_var, values=ngrok_regions, state="readonly")
+region_dropdown.pack(pady=5)
 
 command_entry = tk.Entry(console_tab, width=50)
 command_entry.pack(pady=5)
